@@ -12,7 +12,7 @@ GROUP BY region;
 SELECT AVG(total_sales) as avg_sales_per_transaction
 FROM sales_data;
 
--- Check for duplicate OrderIds
+-- Check for duplicate OrderId
 SELECT OrderId, COUNT(*) as count
 FROM sales_data
 GROUP BY OrderId
